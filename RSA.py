@@ -48,7 +48,7 @@ if __name__ == "__main__":
     ind=int(input("Enter an index from 1 to "+str(r2-1)+" for generating a public key: "))
     while(ind<1 or ind>r2-1):
         ind=int(input("Index out of range. Enter again: "))
-    e=key[ind+1]
+    e=key[ind-1]
     d=Modular_Inverse(e,phi) #private key
     print("The public key is",e)
     print("\n")
